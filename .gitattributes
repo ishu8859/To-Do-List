@@ -1,2 +1,25 @@
-# Auto detect text files and perform LF normalization
+# Set default behavior to automatically normalize line endings
 * text=auto
+
+# Explicitly declare text files to ensure correct line endings
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
+
+# Denote binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+
+# Exclude specific files from diffs
+*.min.js -diff
+*.min.css -diff
+
+# Handle Vue single-file components (if applicable)
+*.vue text
